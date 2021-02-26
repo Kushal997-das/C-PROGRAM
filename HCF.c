@@ -6,8 +6,8 @@ main()
     printf("enter the two numbers a & b\n");
     scanf("%d%d",&a,&b);
     high=a>b?a:b;
-    for(high;high<=a*b;high++)
-    if(high%a==0&&high%b==0)
+    for(high;high>=1;high--)
+    if(a%high==0&&b%high==0)
     {
     printf("The HCF of %d and %d = %d",a,b,high);
     break;
